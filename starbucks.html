@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>starbucks website landing page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="section" id="section">
+        <div class="circle"></div>
+        <header>
+    
+            <a href="#" ><img src="logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#section-link">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#p-link">pricing</a></li>
+                <li><a href="#c-link">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just coffee<br>It's<span>STARBUCKS</span></h2>
+                <p>Our aspiration is to be people positive – investing in humanity and the well-being of everyone we connect with, from our partners to coffee farmers to the customers in our stores and beyond.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="imgBox">
+                <img src="img1.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb1.png"></li>
+            <li><img src="thumb2.png"></li>
+            <li><img src="thumb3.png"></li>
+        </ul>
+        <ul class="sci">
+         <li><a href="#"><img src="facebook.png"></a></li>
+         <li><a href="#"><img src="twitter.png"></a></li>
+         <li><a href="#"><img src="instagram.png"></a></li>
+        </ul>
+    </section>
+    <div class="p" id="p">
+        <h1>Pricing</h1>
+    <figure class="wp-block-table">
+        <table>
+            <thead>
+                <tr>Special Beverages
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Duo Cocoa Mocha</td>
+                     <td>Rs.345</td>
+                </tr>
+                <tr><td>White Mocha Coconut Barfi Latte</td>
+                    <td>Rs.275</td>
+                </tr>
+                <tr><td>Pumpkin Spice Frappuccino</td>
+                    <td>Rs.455</td>
+                </tr>
+                <tr><td>Irish Cream Cake</td>
+                    <td>Rs.545</td>
+                </tr>
+                <tr><td>Chocolate Cappuccino</td>
+                    <td>Rs.145</td>
+                </tr>
+                <tr><td>Cold Brew Black</td>
+                    <td>Rs.145</td>
+                </tr>
+                <tr><td>Double Chocolate Chip Frappuccino</td>
+                    <td>Rs.235</td>
+                </tr>
+                <tr><td>Caramel Frappuccino</td>
+                    <td>Rs.209</td>
+                </tr>
+                
+             
+            </tbody>
+           </table>
+    </figure>
+       
+    </div>
+    <div class="c" id="c">
+        <center><h1>Contact us</h1></center>
+        <p><span class="s">Please email your detailed inquiry and deadline for response to the following:</span></p>
+            <p>Phone:+44 206 318 7100</p>
+            <p>Email: starbucks@gmail.com</p>
+            <p><span class="s">inquiries related to Asia or Canada please visit their respective Starbucks Stories & News site
+            Europe, Middle East and Africa:</span></p>
+            <p>Phone: +44 20 3047 2656</p>
+            <p>Email: EMEA@starbucks.com </p>
+    </div>
+</body>
+<script>
+    document.querySelector('a[href="#c-link"]').addEventListener('click', function (event) {
+      event.preventDefault();
+      document.getElementById('c').scrollIntoView({ behavior:"smooth" });
+    });
+    document.querySelector('a[href="#p-link"]').addEventListener('click', function (event) {
+      event.preventDefault();
+      document.getElementById('p').scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
+</html>
